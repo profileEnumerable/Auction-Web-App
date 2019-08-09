@@ -26,13 +26,18 @@ namespace Auction.Data_Access_Layer.Entities
         public string Description { get; set; }
 
         [Required]
-        public Customer Owner { get; set; }
+        public virtual Customer Owner { get; set; }
 
-        public Customer BidLeader { get; set; }
+        public virtual Customer BidLeader { get; set; }
 
         [Required]
         public DateTime DateAdded { get; set; }
 
-        public ICollection<Bid> Bids { get; set; }
+        public virtual ICollection<Bid> Bids { get; set; }
+
+        public Lot()
+        {
+            Bids = new List<Bid>();
+        }
     }
 }

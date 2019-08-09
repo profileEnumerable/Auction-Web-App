@@ -5,6 +5,8 @@ namespace Auction.Data_Access_Layer.Entities
 {
     public class Bid
     {
+        public int Id { get; set; }
+
         [Required]
         public Customer Participant { get; set; }
 

@@ -10,8 +10,14 @@ namespace Auction.Data_Access_Layer.Entities
         [Required]
         public string Name { get; set; }
 
-        public ICollection<Lot> LotsForSale { get; set; }
+        public virtual ICollection<Lot> LotsForSale { get; set; }
 
-        public ICollection<Lot> LotsForBuy { get; set; }
+        public virtual ICollection<Lot> LotsForBuy { get; set; }
+
+        public Customer()
+        {
+            LotsForSale = new List<Lot>();
+            LotsForBuy = new List<Lot>();
+        }
     }
 }

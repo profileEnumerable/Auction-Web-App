@@ -24,12 +24,9 @@ namespace Auction.Data_Access_Layer.Entity_Framework
     {
         protected override void Seed(AuctionContext context)
         {
-
-            var customers = new Customer[]
-            {
-                new Customer(){ Name="Yuri" },
-                new Customer(){ Name="Vlad" },
-            };
+            var yuri = new Customer() { Name = "Yuri" };
+            var vlad = new Customer() { Name = "Vlad" };
+            var jon = new Customer() { Name = "Jon" };
 
             var lots = new Lot[]
             {
@@ -39,7 +36,7 @@ namespace Auction.Data_Access_Layer.Entity_Framework
                     StartPrice = 10,
                     CurrentPrice = 10,
                     DateAdded = DateTime.Now,
-                    Owner = customers[0]
+                    Owner = yuri
                 },
                 new Lot()
                 {
@@ -47,11 +44,14 @@ namespace Auction.Data_Access_Layer.Entity_Framework
                     StartPrice = 120,
                     CurrentPrice = 120,
                     DateAdded = DateTime.Now,
-                    Owner = customers[1]
+                    Owner = vlad
                 }
             };
 
-            context.Customers.AddRange(customers);
+            yuri.LotsForSale.Add(lots[0]);
+            vlad.LotsForSale.Add(lots[1]);
+
+            context.Customers.AddRange(new[] { yuri, vlad, jon });
             context.Lots.AddRange(lots);
 
             context.SaveChanges();
