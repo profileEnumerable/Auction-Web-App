@@ -7,7 +7,6 @@ namespace Auction.Data_Access_Layer.Entities
     {
         public int Id { get; set; }
 
-        [Required]
         public string Name { get; set; }
 
         public virtual ICollection<Lot> LotsForSale { get; set; }

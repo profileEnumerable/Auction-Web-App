@@ -1,0 +1,17 @@
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\Auction.Business Logic Layer.dll.config
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\Auction.Business Logic Layer.dll
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\Auction.Business Logic Layer.pdb
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\Auction.Data Access Layer.dll
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\AutoMapper.dll
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\EntityFramework.dll
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\Auction.Data Access Layer.pdb
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\Auction.Data Access Layer.dll.config
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\AutoMapper.xml
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\EntityFramework.xml
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\obj\Debug\Auction.Business Logic Layer.csprojAssemblyReference.cache
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\obj\Debug\Auction.Business Logic Layer.csproj.CoreCompileInputs.cache
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\obj\Debug\Auction.Business Logic Layer.csproj.CopyComplete
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\obj\Debug\Auction.Business Logic Layer.dll
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\obj\Debug\Auction.Business Logic Layer.pdb
