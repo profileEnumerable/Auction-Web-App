@@ -1,0 +1,42 @@
+/*-----------------------Style for tags------------------------*/
+hr {
+  width: 100%;
+}
+
+/*-----------------------Style for css selectors------------------------*/
+.upload-img {
+  width: 180px;
+}
+.form-inputs {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.img-upload {
+  border: 2px dashed gray;
+}
+
+.lot-description {
+  height: 200px;
+  resize: vertical;
+  color: rgba(10, 10, 10, 0.657);
+}
+
+.payment-block {
+  display: flex;
+}
+
+.margin-reset {
+  margin: 0;
+}
+
+.payment-block select {
+  margin-right: 50px;
+}
+
+.add-lot-btn {
+  align-self: flex-end;
+  width: 300px;
+}

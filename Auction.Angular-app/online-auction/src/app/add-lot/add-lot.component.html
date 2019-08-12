@@ -1,1 +1,45 @@
-<p>add-lot works!</p>
+<div class="container">
+    <div class="card-panel blue-grey lighten-1">
+        <h5 class="center white-text">Add your lot NOW !</h5>
+    </div>
+    <div class="add-lot-area">
+        <div class="row">
+            <div class="img-upload center col s4 card-panel blue-grey lighten-3">
+                <h5 class="white-text">Load your image here</h5>
+                <img class="upload-img" [src]="imagePath">
+                <input type="file">
+            </div>
+            <div class="center col s8 card-panel">
+                <h5 class="black-text">Descride your lot</h5>
+                <form>
+                    <div class="form-inputs">
+                        <div class="input-field">
+                            <input type="text" id="name of lot">
+                            <label for="name of lot">Name of Lot</label>
+                        </div>
+                        <textarea class="lot-description" name="description" placeholder="*Description"></textarea>
+                        <hr>
+                        <div class="input-field">
+                            <input type="text" id="st-price">
+                            <label for="st-price">Start price 💲</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="bid-end-date">
+                            <label for="bid-end-date">Bid end date 📅</label>
+                        </div>
+                        <div class="payment-block">
+                            <select class="browser-default">
+                                <option value="" disabled selected>Choose a bank 🏦</option>
+                            </select>
+                            <div class="input-field col s12 margin-reset">
+                                <input type="text" id="card-number">
+                                <label for="card-number">Card number 💳</label>
+                            </div>
+                            <button type="submit" class="btn-large btn-submit add-lot-btn indigo lighten-2">Add Lot</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
