@@ -7,9 +7,22 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AddLotComponent implements OnInit {
   imagePath: string = "../assets/upload-img-def.png";
+  photoToUpload: File;
+
   constructor() {}
 
-  ngOnInit() {
-    
+  ngOnInit() {}
+
+  lotPhotoChanged(photoFiles: FileList) {
+    this.photoToUpload = photoFiles.item(0);
+
+    const reader = new FileReader();
+
+    reader.onload = (event: any) => {
+      console.log(event.target);
+      this.imagePath = event.target.result;
+    };
+
+    reader.readAsDataURL(this.photoToUpload);
   }
 }

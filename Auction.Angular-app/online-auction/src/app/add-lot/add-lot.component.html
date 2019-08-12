@@ -7,7 +7,7 @@
             <div class="img-upload center col s4 card-panel blue-grey lighten-3">
                 <h5 class="white-text">Load your image here</h5>
                 <img class="upload-img" [src]="imagePath">
-                <input type="file">
+                <input (change)="lotPhotoChanged($event.target.files)" type="file" #lotPhoto accept="image/*">
             </div>
             <div class="center col s8 card-panel">
                 <h5 class="black-text">Descride your lot</h5>
@@ -35,7 +35,8 @@
                                 <input type="text" id="card-number">
                                 <label for="card-number">Card number 💳</label>
                             </div>
-                            <button type="submit" class="btn-large btn-submit add-lot-btn indigo lighten-2">Add Lot</button>
+                            <button type="submit" class="btn-large btn-submit add-lot-btn indigo lighten-2">Add
+                                Lot</button>
                         </div>
                     </div>
                 </form>
