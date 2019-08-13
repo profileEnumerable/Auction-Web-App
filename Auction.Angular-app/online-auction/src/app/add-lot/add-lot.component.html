@@ -24,12 +24,16 @@
                             <label for="st-price">Start price 💲</label>
                         </div>
                         <div class="input-field">
-                            <input type="text" id="bid-end-date">
-                            <label for="bid-end-date">Bid end date 📅</label>
+
+                            <select class="browser-default">
+                                <option value="date-choose" disabled selected>Bid end date 📅</option>
+                                <option *ngFor="let date of lifetimeDates">{{date}}</option>
+                            </select>
                         </div>
                         <div class="payment-block">
                             <select class="browser-default">
-                                <option value="" disabled selected>Choose a bank 🏦</option>
+                                <option value="bank-choose" disabled selected>Choose a bank 🏦</option>
+                                <option *ngFor="let bank of banks">{{bank}}</option>
                             </select>
                             <div class="input-field col s12 margin-reset">
                                 <input type="text" id="card-number">

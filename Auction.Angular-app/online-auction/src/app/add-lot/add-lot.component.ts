@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { AddLotService } from "../shered/add-lot.service";
 
 @Component({
   selector: "app-add-lot",
@@ -8,11 +9,21 @@ import { Component, OnInit } from "@angular/core";
 export class AddLotComponent implements OnInit {
   imagePath: string = "../assets/upload-img-def.png";
   photoToUpload: File;
+  lifetimeMap: Map<string, Date>;
+  lifetimeDates: any; //itarable obj with Map keys that represent dates like str
+  banks: string[];
 
-  constructor() {}
+  constructor(private addLotService: AddLotService) {
+    addLotService.getlifetimeDates();
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.lifetimeMap = this.addLotService.getlifetimeDates();
+    this.lifetimeDates = this.lifetimeMap.keys();
+    this.banks = this.addLotService.banks;
+  }
 
+  //changeing the preview photo
   lotPhotoChanged(photoFiles: FileList) {
     this.photoToUpload = photoFiles.item(0);
 
