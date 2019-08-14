@@ -1,0 +1,9 @@
+/*---------------------------Styles for tags--------------------*/
+
+/*---------------------------Styles for CSS selectors--------------------*/
+.lot-item {
+  max-width: 350px;
+  display: inline-block;
+  margin: 20px;
+}
+

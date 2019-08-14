@@ -1,0 +1,40 @@
+/*---------------------------Styles for tags--------------------*/
+
+/*---------------------------Styles for CSS selectors--------------------*/
+.fa-jenkins {
+  font-size: 3.5rem;
+  color: brown;
+}
+
+.site-name {
+  font-size: 1.9rem;
+}
+
+.search-input {
+  max-width: 250px;
+  outline: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid whitesmoke;
+  background: #ee6e7275;
+  margin-top: 15px;
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.center-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-in-hint {
+  font-size: 1.8rem;
+  margin-left: 5px;
+}
+
