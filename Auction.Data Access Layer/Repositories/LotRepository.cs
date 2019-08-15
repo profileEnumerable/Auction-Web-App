@@ -18,7 +18,7 @@ namespace Auction.Data_Access_Layer.Repositories
         }
         public IEnumerable<Lot> Find(Func<Lot, bool> predicate)
         {
-            return _context.Lots.Where(predicate);
+            return _context.Lots.Where(predicate).ToList();
         }
 
         public IEnumerable<Lot> GetAll()

@@ -20,7 +20,7 @@ namespace Auction.Data_Access_Layer.Entity_Framework
         { }
     }
 
-    public class AuctionDbInitializer : DropCreateDatabaseIfModelChanges<AuctionContext>
+    public class AuctionDbInitializer : DropCreateDatabaseAlways<AuctionContext>
     {
         protected override void Seed(AuctionContext context)
         {
@@ -36,7 +36,7 @@ namespace Auction.Data_Access_Layer.Entity_Framework
                     StartPrice = 10,
                     CurrentPrice = 10,
                     DateAdded = DateTime.Now,
-                    Owner = yuri
+                    //Owner = yuri
                 },
                 new Lot()
                 {
@@ -44,7 +44,7 @@ namespace Auction.Data_Access_Layer.Entity_Framework
                     StartPrice = 120,
                     CurrentPrice = 120,
                     DateAdded = DateTime.Now,
-                    Owner = vlad
+                    //Owner = vlad
                 }
             };
 

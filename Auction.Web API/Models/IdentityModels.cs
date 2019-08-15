@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using System.Security.Claims;
+using System.Threading.Tasks;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
-using System.Security.Claims;
-using System.Threading.Tasks;
 
 namespace Auction.Web_API.Models
 {
@@ -12,7 +12,7 @@ namespace Auction.Web_API.Models
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager, string authenticationType)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
-            ClaimsIdentity userIdentity = await manager.CreateIdentityAsync(this, authenticationType);
+            var userIdentity = await manager.CreateIdentityAsync(this, authenticationType);
             // Add custom user claims here
             return userIdentity;
         }
@@ -24,7 +24,7 @@ namespace Auction.Web_API.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-
+        
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

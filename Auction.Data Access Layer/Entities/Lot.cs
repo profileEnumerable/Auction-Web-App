@@ -23,9 +23,9 @@ namespace Auction.Data_Access_Layer.Entities
 
         public string Description { get; set; }
 
-        public virtual Customer Owner { get; set; }
+        //public virtual Customer Owner { get; set; }
 
-        public virtual Customer BidLeader { get; set; }
+        //public virtual Customer BidLeader { get; set; }
 
         public DateTime DateAdded { get; set; }
 

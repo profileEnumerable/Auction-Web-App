@@ -48,6 +48,8 @@ C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\roslyn\vbc.rsp
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\roslyn\VBCSCompiler.exe
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Antlr3.Runtime.dll
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Auction.Business Logic Layer.dll
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Auction.Data Access Layer.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\EntityFramework.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\EntityFramework.SqlServer.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Microsoft.AspNet.Identity.Core.dll
@@ -65,6 +67,10 @@ C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Microsoft.Owin.Security.
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Newtonsoft.Json.dll
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Ninject.dll
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Ninject.Web.Common.dll
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Ninject.Web.WebApi.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Owin.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\System.Net.Http.Formatting.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\System.Web.Helpers.dll
@@ -77,7 +83,17 @@ C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\System.Web.Razor.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\System.Web.WebPages.Deployment.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\System.Web.WebPages.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\System.Web.WebPages.Razor.dll
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\WebActivatorEx.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\WebGrease.dll
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\AutoMapper.dll
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Auction.Business Logic Layer.pdb
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Auction.Business Logic Layer.dll.config
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Auction.Data Access Layer.pdb
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Auction.Data Access Layer.dll.config
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Ninject.xml
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Ninject.Web.Common.xml
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Ninject.Web.WebApi.xml
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Newtonsoft.Json.xml
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\System.Net.Http.Formatting.xml
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\System.Web.Helpers.xml
@@ -106,6 +122,7 @@ C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Microsoft.Owin.Security.
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\System.Web.Http.Owin.xml
 C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\AutoMapper.xml
 C:\Users\suckt\source\repos\Auction\Auction.Web API\obj\Debug\Auction.Web API.csprojAssemblyReference.cache
 C:\Users\suckt\source\repos\Auction\Auction.Web API\obj\Debug\Auction.Web API.csproj.CoreCompileInputs.cache
 C:\Users\suckt\source\repos\Auction\Auction.Web API\obj\Debug\Auction.Web API.csproj.CopyComplete
