@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  localhost: "https://localhost:44352/api",
+  lotsByPageNum: "/lots?pageNumber="
 };
 
 /*

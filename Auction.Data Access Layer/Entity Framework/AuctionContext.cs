@@ -1,5 +1,6 @@
 ﻿using Auction.Data_Access_Layer.Entities;
 using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 
 namespace Auction.Data_Access_Layer.Entity_Framework
@@ -28,25 +29,21 @@ namespace Auction.Data_Access_Layer.Entity_Framework
             var vlad = new Customer() { Name = "Vlad" };
             var jon = new Customer() { Name = "Jon" };
 
-            var lots = new Lot[]
+            var lots = new List<Lot>();
+
+            for (int i = 0; i < 100; i++)
             {
-                new Lot()
+                var lot = new Lot()
                 {
                     Name = "Commander Watch",
                     StartPrice = 10,
                     CurrentPrice = 10,
                     DateAdded = DateTime.Now,
                     //Owner = yuri
-                },
-                new Lot()
-                {
-                    Name = "Picture \"Sailboat\"",
-                    StartPrice = 120,
-                    CurrentPrice = 120,
-                    DateAdded = DateTime.Now,
-                    //Owner = vlad
-                }
-            };
+                };
+
+                lots.Add(lot);
+            }
 
             yuri.LotsForSale.Add(lots[0]);
             vlad.LotsForSale.Add(lots[1]);

@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { Lot } from "../shered/lot.model";
+import { LotsListService } from "../shered/lots-list.service";
 
 @Component({
   selector: "app-lots-list",
@@ -6,9 +8,14 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./lots-list.component.css"]
 })
 export class LotsListComponent implements OnInit {
-  lots: number[] = new Array(3);
+  lots: Lot[];
+  startPageNum: number = 1;
 
-  constructor() {}
+  constructor(private lotsListService: LotsListService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.lotsListService
+      .getLotsByPageNumber(this.startPageNum)
+      .subscribe(lotsArr => (this.lots = lotsArr), e => console.error(e));
+  }
 }

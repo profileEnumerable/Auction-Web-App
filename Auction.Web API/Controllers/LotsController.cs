@@ -9,6 +9,7 @@ using Auction.Business_Logic_Layer.DTO;
 
 namespace Auction.Web_API.Controllers
 {
+    [RoutePrefix("api/lots")]
     public class LotsController : ApiController
     {
         private readonly ILotService _lotService;

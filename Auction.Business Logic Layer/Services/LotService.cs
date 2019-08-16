@@ -19,7 +19,7 @@ namespace Auction.Business_Logic_Layer.Services
 
         public IEnumerable<LotDto> GetLotsByPageNumber(int pageNum)
         {
-            const int selectionLength = 10;//how many lots we can get for the requested page
+            const int selectionLength = 9;//how many lots we can get for the requested page
             int startId = selectionLength * (pageNum - 1);
             int endId = startId + selectionLength;//set the and id of selection
 

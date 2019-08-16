@@ -128,3 +128,6 @@ C:\Users\suckt\source\repos\Auction\Auction.Web API\obj\Debug\Auction.Web API.cs
 C:\Users\suckt\source\repos\Auction\Auction.Web API\obj\Debug\Auction.Web API.csproj.CopyComplete
 C:\Users\suckt\source\repos\Auction\Auction.Web API\obj\Debug\Auction.Web API.dll
 C:\Users\suckt\source\repos\Auction\Auction.Web API\obj\Debug\Auction.Web API.pdb
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\System.Web.Cors.dll
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\System.Web.Http.Cors.dll
+C:\Users\suckt\source\repos\Auction\Auction.Web API\bin\System.Web.Http.Cors.xml

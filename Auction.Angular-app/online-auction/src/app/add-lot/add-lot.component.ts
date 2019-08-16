@@ -13,9 +13,7 @@ export class AddLotComponent implements OnInit {
   lifetimeDates: any; //itarable obj with Map keys that represent dates like str
   banks: string[];
 
-  constructor(private addLotService: AddLotService) {
-    addLotService.getlifetimeDates();
-  }
+  constructor(private addLotService: AddLotService) {}
 
   ngOnInit() {
     this.lifetimeMap = this.addLotService.getlifetimeDates();

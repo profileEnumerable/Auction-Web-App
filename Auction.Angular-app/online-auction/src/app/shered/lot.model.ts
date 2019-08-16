@@ -1,3 +1,8 @@
 export class Lot {
-  name: string;  
+  id: number;
+  name: string;
+  startPrice: number;
+  currentPrice: number;
+  description: string;
+  dateAdded: Date;
 }
