@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col s8 offset-s2">
+            <div class="card white">
+                <div class="registration-title center">
+                    <h3>Registration</h3>
+                </div>
+                <form class="col s12 white" #userRegistrationForm="ngForm">
+                    <div class="row">
+                        <div class="input-field col s6 offset-s3">
+                            <input class="validate" id="user-name" type="text" name="UserName" #UserName="ngModel"
+                                [(ngModel)]="user.userName" required [ngModelOptions]="{standalone: true}">
+                            <label data-error="Required field!" for="user-name">User Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6 offset-s3">
+                            <input id="email" type="email" name="email" class="validate" #email="ngModel" [(ngModel)]="user.email" required>
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="input-field col s6 offset-s3">
+                            <input id="password" type="password" name="password" class="validate" #password="ngModel"
+                                [(ngModel)]="user.password" required minlength="5">
+                            <label [attr.data-error]="password.error!=null?(Password.errors.required?'1':'2'):''"
+                                for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s8 offset-s5">
+                            <button [disabled]="!userRegistrationForm.valid" class="btn-large btn-submit" type="submit">Submit</button>
+                        </div> 
+                    </div>
+                </form>
+                <div class="card-action">
+                    <a>Back to Lots</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

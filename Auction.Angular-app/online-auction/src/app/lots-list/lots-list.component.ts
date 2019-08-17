@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { Lot } from "../shered/lot.model";
-import { LotsListService } from "../shered/lots-list.service";
+import { Lot } from "../shered/models/lot.model";
+import { LotsListService } from "../shered/services/lots-list.service";
 
 @Component({
   selector: "app-lots-list",

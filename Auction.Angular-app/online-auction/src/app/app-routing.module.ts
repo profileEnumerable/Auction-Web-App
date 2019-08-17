@@ -3,12 +3,14 @@ import { Routes, RouterModule } from "@angular/router";
 import { AddLotComponent } from "./add-lot/add-lot.component";
 import { LotsListComponent } from "./lots-list/lots-list.component";
 import { SignInComponent } from "./sign-in/sign-in.component";
+import { RegistrationComponent } from './registration/registration.component';
 
 const routes: Routes = [
-  { path: "", pathMatch: "full", redirectTo: "lots" },
+  { path: "", pathMatch: "full", redirectTo: "registration" },
   { path: "addLot", component: AddLotComponent },
-  { path: "lots", component: LotsListComponent },
-  { path: "sign-in", component: SignInComponent }
+  { path: "lotsList", component: LotsListComponent },
+  { path: "sign-in", component: SignInComponent },
+  { path: "registration", component: RegistrationComponent }
 ];
 
 @NgModule({

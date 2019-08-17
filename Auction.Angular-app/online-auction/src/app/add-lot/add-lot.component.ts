@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { AddLotService } from "../shered/add-lot.service";
+import { AddLotService } from "../shered/services/add-lot.service";
 
 @Component({
   selector: "app-add-lot",
