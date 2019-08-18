@@ -8,7 +8,7 @@ namespace Auction.Data_Access_Layer.Entities
         public int Id { get; set; }
 
         
-        public Customer Participant { get; set; }
+        public ApplicationUser Participant { get; set; }
 
         
         public DateTime DateOfBid { get; set; }

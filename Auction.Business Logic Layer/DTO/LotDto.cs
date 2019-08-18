@@ -27,9 +27,9 @@ namespace Auction.Business_Logic_Layer.DTO
         public string Description { get; set; }
 
         [Required]
-        public virtual Customer Owner { get; set; }
+        public virtual ApplicationUser Owner { get; set; }
 
-        public virtual Customer BidLeader { get; set; }
+        public virtual ApplicationUser BidLeader { get; set; }
 
         [Required]
         public DateTime DateAdded { get; set; }

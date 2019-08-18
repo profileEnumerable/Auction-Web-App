@@ -1,18 +1,20 @@
-﻿using System;
+﻿using Microsoft.Owin;
+using Owin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Owin;
-using Owin;
+using Auction.Data_Access_Layer.Entity_Framework;
 
 [assembly: OwinStartup(typeof(Auction.Web_API.Startup))]
 
 namespace Auction.Web_API
 {
-    public partial class Startup
+    public class Startup
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
+         //app.CreatePerOwinContext(AuctionContext)   
         }
     }
 }
+ 

@@ -15,3 +15,7 @@ C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\obj\Debug\Aucti
 C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\obj\Debug\Auction.Business Logic Layer.csproj.CopyComplete
 C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\obj\Debug\Auction.Business Logic Layer.dll
 C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\obj\Debug\Auction.Business Logic Layer.pdb
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\suckt\source\repos\Auction\Auction.Business Logic Layer\bin\Debug\Microsoft.AspNet.Identity.Core.xml

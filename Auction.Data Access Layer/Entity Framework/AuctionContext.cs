@@ -1,14 +1,15 @@
 ﻿using Auction.Data_Access_Layer.Entities;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 
 namespace Auction.Data_Access_Layer.Entity_Framework
 {
-    public class AuctionContext : DbContext
+    public class AuctionContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Lot> Lots { get; set; }
-        public DbSet<Customer> Customers { get; set; }
+
         public DbSet<Bid> Bids { get; set; }
 
         static AuctionContext()
@@ -18,16 +19,17 @@ namespace Auction.Data_Access_Layer.Entity_Framework
 
         public AuctionContext(string connectionString)
             : base(connectionString)
-        { }
+        {
+        }
     }
 
     public class AuctionDbInitializer : DropCreateDatabaseAlways<AuctionContext>
     {
         protected override void Seed(AuctionContext context)
         {
-            var yuri = new Customer() { Name = "Yuri" };
-            var vlad = new Customer() { Name = "Vlad" };
-            var jon = new Customer() { Name = "Jon" };
+            var yuri = new ApplicationUser() { Name = "Yuri" };
+            var vlad = new ApplicationUser() { Name = "Vlad" };
+            var jon = new ApplicationUser() { Name = "Jon" };
 
             var lots = new List<Lot>();
 
@@ -48,7 +50,13 @@ namespace Auction.Data_Access_Layer.Entity_Framework
             yuri.LotsForSale.Add(lots[0]);
             vlad.LotsForSale.Add(lots[1]);
 
-            context.Customers.AddRange(new[] { yuri, vlad, jon });
+            ApplicationUser[] applicationUsers = { yuri, vlad, jon };
+
+            foreach (ApplicationUser applicationUser in applicationUsers)
+            {
+                context.Users.Add(applicationUser);
+            }
+
             context.Lots.AddRange(lots);
 
             context.SaveChanges();
