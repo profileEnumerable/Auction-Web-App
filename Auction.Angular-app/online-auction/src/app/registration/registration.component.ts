@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { User } from "../shered/models/user.model";
+import { RegisterService } from "../shered/services/register.service";
 
 @Component({
   selector: "app-registration",
@@ -10,7 +11,7 @@ import { User } from "../shered/models/user.model";
 export class RegistrationComponent implements OnInit {
   user: User;
 
-  constructor() {}
+  constructor(private registrationService: RegisterService) {}
 
   ngOnInit() {
     this.resetForm();
@@ -29,5 +30,18 @@ export class RegistrationComponent implements OnInit {
       password: "",
       userName: ""
     };
+  }
+
+  onSubmit(form: NgForm) {
+    console.log(form.value);
+
+    this.registrationService.registerUser(form.value).subscribe((data: any) => {
+      if (data.Succeeded) {
+        console.log("Succeeded");
+      }
+      else{
+        console.error('error');
+      }
+    });
   }
 }

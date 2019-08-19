@@ -1,5 +1,5 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
+
 
 namespace Auction.Data_Access_Layer.Entities
 {
@@ -7,13 +7,8 @@ namespace Auction.Data_Access_Layer.Entities
     {
         public int Id { get; set; }
 
-        
-        public ApplicationUser Participant { get; set; }
-
-        
         public DateTime DateOfBid { get; set; }
 
-        
         public decimal Rate { get; set; }
     }
 }

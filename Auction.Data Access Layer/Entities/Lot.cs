@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace Auction.Data_Access_Layer.Entities
 {
-
     public class Lot
     {
         public int Id { get; set; }

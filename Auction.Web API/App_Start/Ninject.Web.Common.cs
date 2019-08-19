@@ -1,7 +1,7 @@
 using System.Web.Http;
 using Auction.Business_Logic_Layer.Interfaces;
 using Auction.Business_Logic_Layer.Services;
-using Auction.Data_Access_Layer.Interfaces;
+
 using Ninject.Web.WebApi;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(Auction.Web_API.App_Start.NinjectWebCommon), "Start")]
@@ -11,6 +11,7 @@ namespace Auction.Web_API.App_Start
 {
     using System;
     using System.Web;
+    using Auction.Data_Access_Layer.Interfaces;
     using Auction.Data_Access_Layer.Repositories;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
@@ -70,7 +71,7 @@ namespace Auction.Web_API.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().WithConstructorArgument("AuctionDB");//AuctionDB - name of connection
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork>();
 
             kernel.Bind<ILotService>().To<LotService>();
         }        

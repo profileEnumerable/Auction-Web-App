@@ -1,41 +1,18 @@
+C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.csproj.CoreCompileInputs.cache
 C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Auction.Data Access Layer.dll.config
 C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Auction.Data Access Layer.dll
 C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Auction.Data Access Layer.pdb
 C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\EntityFramework.dll
 C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\EntityFramework.xml
 C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.csproj.CoreCompileInputs.cache
+C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.csprojAssemblyReference.cache
 C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.csproj.CopyComplete
 C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.dll
 C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.pdb
-C:\Users\fibon\Source\Repos\Auction-Web-App\Auction.Data Access Layer\bin\Debug\Auction.Data Access Layer.dll.config
-C:\Users\fibon\Source\Repos\Auction-Web-App\Auction.Data Access Layer\bin\Debug\Auction.Data Access Layer.dll
-C:\Users\fibon\Source\Repos\Auction-Web-App\Auction.Data Access Layer\bin\Debug\Auction.Data Access Layer.pdb
-C:\Users\fibon\Source\Repos\Auction-Web-App\Auction.Data Access Layer\bin\Debug\EntityFramework.dll
-C:\Users\fibon\Source\Repos\Auction-Web-App\Auction.Data Access Layer\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\fibon\Source\Repos\Auction-Web-App\Auction.Data Access Layer\bin\Debug\EntityFramework.xml
-C:\Users\fibon\Source\Repos\Auction-Web-App\Auction.Data Access Layer\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\fibon\Source\Repos\Auction-Web-App\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.csprojAssemblyReference.cache
-C:\Users\fibon\Source\Repos\Auction-Web-App\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.csproj.CoreCompileInputs.cache
-C:\Users\fibon\Source\Repos\Auction-Web-App\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.csproj.CopyComplete
-C:\Users\fibon\Source\Repos\Auction-Web-App\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.dll
-C:\Users\fibon\Source\Repos\Auction-Web-App\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.pdb
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.csprojAssemblyReference.cache
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.Owin.dll
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.Owin.Security.Cookies.dll
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.Owin.Security.dll
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.Owin.Security.OAuth.dll
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Newtonsoft.Json.dll
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Owin.dll
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.Owin.xml
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.Owin.Security.xml
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.Owin.Security.Cookies.xml
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Microsoft.Owin.Security.OAuth.xml
-C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\obj\Debug\Auction.Data_Access_Layer.Migrations.InitialDb.resources
+C:\Users\suckt\source\repos\Auction\Auction.Data Access Layer\obj\Debug\Auction.Data Access Layer.csproj.GenerateResource.cache

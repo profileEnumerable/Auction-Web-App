@@ -17,23 +17,23 @@ namespace Auction.Data_Access_Layer.Entity_Framework
             Database.SetInitializer(new AuctionDbInitializer());
         }
 
-        public AuctionContext(string connectionString)
-            : base(connectionString)
+        public AuctionContext()
+            : base("AuctionDB")
         {
         }
     }
 
-    public class AuctionDbInitializer : DropCreateDatabaseAlways<AuctionContext>
+    public class AuctionDbInitializer : DropCreateDatabaseIfModelChanges<AuctionContext>
     {
         protected override void Seed(AuctionContext context)
         {
-            var yuri = new ApplicationUser() { Name = "Yuri" };
-            var vlad = new ApplicationUser() { Name = "Vlad" };
-            var jon = new ApplicationUser() { Name = "Jon" };
+            var yuri = new ApplicationUser() { UserName = "Yuri" };
+            var vlad = new ApplicationUser() { UserName = "Vlad" };
+            var jon = new ApplicationUser() { UserName = "Jon" };
 
             var lots = new List<Lot>();
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 500; i++)
             {
                 var lot = new Lot()
                 {
@@ -58,6 +58,14 @@ namespace Auction.Data_Access_Layer.Entity_Framework
             }
 
             context.Lots.AddRange(lots);
+
+            context.Lots.Add(new Lot()
+            {
+                Name = "Unique coin",
+                StartPrice = 10,
+                CurrentPrice = 10,
+                DateAdded = DateTime.Now
+            });
 
             context.SaveChanges();
         }

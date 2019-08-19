@@ -17,9 +17,9 @@ namespace Auction.Data_Access_Layer.Repositories
             _context = context;
         }
 
-        public void RegisterUser(ApplicationUser user)
+        public IEnumerable<ApplicationUser> GetAll()
         {
-            _context.Users.Add(user);
+            return _context.Users;
         }
     }
 }

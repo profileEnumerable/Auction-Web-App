@@ -50,6 +50,5 @@ namespace Auction.Data_Access_Layer.Repositories
                 _context.Lots.Remove(lot);
             }
         }
-
     }
 }

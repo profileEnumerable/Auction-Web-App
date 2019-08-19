@@ -8,18 +8,19 @@
                 <form class="col s12 white" #userRegistrationForm="ngForm">
                     <div class="row">
                         <div class="input-field col s6 offset-s3">
-                            <input class="validate" id="user-name" type="text" name="UserName" #UserName="ngModel"
-                                [(ngModel)]="user.userName" required [ngModelOptions]="{standalone: true}">
+                            <input class="validate" id="user-name" type="text" name="UserName" #userName="ngModel"
+                                [(ngModel)]="user.userName" required>
                             <label data-error="Required field!" for="user-name">User Name</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s6 offset-s3">
-                            <input id="email" type="email" name="email" class="validate" #email="ngModel" [(ngModel)]="user.email" required>
+                            <input id="email" type="email" name="email" class="validate" #email="ngModel"
+                                [(ngModel)]="user.email" required>
                             <label for="email">Email</label>
                         </div>
                     </div>
-                    <div class="row"> 
+                    <div class="row">
                         <div class="input-field col s6 offset-s3">
                             <input id="password" type="password" name="password" class="validate" #password="ngModel"
                                 [(ngModel)]="user.password" required minlength="5">
@@ -29,8 +30,9 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s8 offset-s5">
-                            <button [disabled]="!userRegistrationForm.valid" class="btn-large btn-submit" type="submit">Submit</button>
-                        </div> 
+                            <button type="submit" (click)="onSubmit(userRegistrationForm)"
+                                [disabled]="!userRegistrationForm.valid" class="btn-large btn-submit">Submit</button>
+                        </div>
                     </div>
                 </form>
                 <div class="card-action">

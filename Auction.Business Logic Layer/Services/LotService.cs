@@ -10,11 +10,11 @@ namespace Auction.Business_Logic_Layer.Services
 {
     public class LotService : ILotService
     {
-        private IUnitOfWork _database { get; }
+        private IUnitOfWork Database { get; }
 
         public LotService(IUnitOfWork database)
         {
-            _database = database;
+            Database = database;
         }
 
         public IEnumerable<LotDto> GetLotsByPageNumber(int pageNum)
@@ -23,7 +23,7 @@ namespace Auction.Business_Logic_Layer.Services
             int startId = selectionLength * (pageNum - 1);
             int endId = startId + selectionLength;//set the and id of selection
 
-            IEnumerable<Lot> lots = _database.Lots.Find(l => l.Id > startId && l.Id <= endId);
+            IEnumerable<Lot> lots = Database.Lots.Find(l => l.Id > startId && l.Id <= endId);
 
             IMapper mapper = new MapperConfiguration(cfg => cfg.CreateMap<Lot, LotDto>()).CreateMapper();
 

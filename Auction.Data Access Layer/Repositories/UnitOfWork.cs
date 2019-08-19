@@ -1,6 +1,5 @@
 ﻿using Auction.Data_Access_Layer.Entities;
 using Auction.Data_Access_Layer.Entity_Framework;
-using Auction.Data_Access_Layer.Identity_Managers;
 using Auction.Data_Access_Layer.Interfaces;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
@@ -10,27 +9,27 @@ namespace Auction.Data_Access_Layer.Repositories
     public class UnitOfWork : IUnitOfWork
     {
         private readonly AuctionContext _context;
-        private ApplicationUserManager _userManager;
+        private UserRepository _userRepository;
         private LotRepository _lotRepository;
 
-        public UnitOfWork(string connectionString)
+        public UnitOfWork()
         {
-            _context = new AuctionContext(connectionString);
+            _context = new AuctionContext();
 
             //use this line for debug propose and check in console SQL requests
             //_context.Database.Log = Console.WriteLine;
         }
 
-        public ApplicationUserManager Users
+        public IUserRepository Users
         {
             get
             {
-                if (_userManager == null)
+                if (_userRepository == null)
                 {
-                    _userManager = new ApplicationUserManager(new UserStore<ApplicationUser>(_context));
+                    _userRepository = new UserRepository(_context);
                 }
 
-                return _userManager;
+                return _userRepository;
             }
         }
 

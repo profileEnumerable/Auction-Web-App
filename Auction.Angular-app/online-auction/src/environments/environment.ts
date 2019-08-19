@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   localhost: "https://localhost:44352/api",
-  lotsByPageNum: "/lots?pageNumber="
+  lotsByPageNum: "/lots?pageNumber=",
+  userRegistration: "/user/register"
 };
 
 /*

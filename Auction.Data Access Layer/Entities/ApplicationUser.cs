@@ -5,7 +5,7 @@ namespace Auction.Data_Access_Layer.Entities
 {
     public class ApplicationUser : IdentityUser
     {
-        public string Name { get; set; }
+        public string FirstName { get; set; }
 
         public virtual ICollection<Lot> LotsForSale { get; set; }
 
