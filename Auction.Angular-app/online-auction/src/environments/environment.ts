@@ -4,9 +4,10 @@
 
 export const environment = {
   production: false,
-  localhost: "https://localhost:44352/api",
-  lotsByPageNum: "/lots?pageNumber=",
-  userRegistration: "/user/register"
+  localhost: "https://localhost:44352",
+  lotsByPageNum: "/api/lots?pageNumber=",
+  userRegistration: "/api/user/register",
+  tokenPath: "/token"
 };
 
 /*

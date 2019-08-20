@@ -4,6 +4,9 @@
             <div class="center">
                 <h3>Sign in</h3>
             </div>
+            <div *ngIf="isLoginError" class="red-text center error-message">
+                Error Occured
+            </div>
             <form #userLoginForm="ngForm" (submit)="onSubmit(userLoginForm)">
                 <div class="row">
                     <div class="input-field col s6 offset-s3">
@@ -20,7 +23,7 @@
                 </div>
                 <div class="row">
                     <div class="input-field center">
-                        <button [disabled]="!loginForm.valid" type="submit" class="btn-large">Login</button>
+                        <button [disabled]="!userLoginForm.valid" type="submit" class="btn-large">Login</button>
                     </div>
                 </div>
                 <p class="center card-panel">Are you not registered ? <span class="blue-text"><a routerLink="/registration">Registration</a></span>

@@ -11,7 +11,8 @@ import { LotsListComponent } from "./lots-list/lots-list.component";
 import { SignInComponent } from "./sign-in/sign-in.component";
 import { LotsListService } from "./shered/services/lots-list.service";
 import { RegistrationComponent } from "./registration/registration.component";
-import { RegisterService } from './shered/services/register.service';
+import { RegisterService } from "./shered/services/register.service";
+import { SignInService } from "./shered/services/sign-in.service";
 
 @NgModule({
   declarations: [
@@ -19,10 +20,10 @@ import { RegisterService } from './shered/services/register.service';
     AddLotComponent,
     LotsListComponent,
     SignInComponent,
-    RegistrationComponent,    
+    RegistrationComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
-  providers: [AddLotService, LotsListService,RegisterService],
+  providers: [LotsListService, RegisterService, AddLotService, SignInService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

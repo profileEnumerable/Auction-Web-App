@@ -21,6 +21,8 @@ namespace Auction.Web_API
 
             config.Filters.Add(new AuthorizeAttribute());//instead of [Authorize] attribute for methods that require authentication  
 
+           //config.EnableCors(new EnableCorsAttribute("http://localhost:4200","*","*"));
+
             // Configure Web API to use only bearer token authentication.
             //config.SuppressDefaultHostAuthentication();
             //config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));//TODO: uncomment letter
