@@ -33,14 +33,12 @@ export class RegistrationComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    console.log(form.value);
-
     this.registrationService.registerUser(form.value).subscribe((data: any) => {
       if (data.Succeeded) {
         console.log("Succeeded");
-      }
-      else{
-        console.error('error');
+        this.resetForm(form);
+      } else {
+        console.error("error");
       }
     });
   }

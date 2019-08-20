@@ -8,10 +8,9 @@ import { AppComponent } from "./app.component";
 import { AddLotComponent } from "./add-lot/add-lot.component";
 import { AddLotService } from "./shered/services/add-lot.service";
 import { LotsListComponent } from "./lots-list/lots-list.component";
-import { SignInComponent } from "./user/sign-in/sign-in.component";
+import { SignInComponent } from "./sign-in/sign-in.component";
 import { LotsListService } from "./shered/services/lots-list.service";
 import { RegistrationComponent } from "./registration/registration.component";
-import { UserComponent } from './user/user.component';
 import { RegisterService } from './shered/services/register.service';
 
 @NgModule({
@@ -20,8 +19,7 @@ import { RegisterService } from './shered/services/register.service';
     AddLotComponent,
     LotsListComponent,
     SignInComponent,
-    RegistrationComponent,
-    UserComponent
+    RegistrationComponent,    
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [AddLotService, LotsListService,RegisterService],

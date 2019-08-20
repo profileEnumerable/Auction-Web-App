@@ -1,11 +1,10 @@
-<div class="container">
     <div class="row">
         <div class="col s8 offset-s2">
             <div class="card white">
-                <div class="registration-title center">
+                <div class="center">
                     <h3>Registration</h3>
                 </div>
-                <form class="col s12 white" #userRegistrationForm="ngForm">
+                <form class="col s12 white" #userRegistrationForm="ngForm" (submit)="onSubmit(userRegistrationForm)">
                     <div class="row">
                         <div class="input-field col s6 offset-s3">
                             <input class="validate" id="user-name" type="text" name="UserName" #userName="ngModel"
@@ -29,17 +28,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s8 offset-s5">
-                            <button type="submit" (click)="onSubmit(userRegistrationForm)"
+                        <div class="input-field center">
+                            <button type="submit"
                                 [disabled]="!userRegistrationForm.valid" class="btn-large btn-submit">Submit</button>
                         </div>
                     </div>
-                </form>
-                <div class="card-action">
-                    <a>Back to Lots</a>
-                </div>
+                </form>                
             </div>
         </div>
     </div>
-
-</div>

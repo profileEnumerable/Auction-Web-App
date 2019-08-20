@@ -7,6 +7,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Web;
 using System.Web.Http;
 
@@ -16,6 +17,7 @@ namespace Auction.Web_API.Controllers
     {
         [Route("api/user/register")]
         [HttpPost]
+        [AllowAnonymous]
         public IdentityResult Register(AccountModel model)
         {
             var store = new UserStore<ApplicationUser>(new AuctionContext()); //TODO: replace with DTO
@@ -26,6 +28,22 @@ namespace Auction.Web_API.Controllers
             IdentityResult identityResult = manager.Create(user, model.Password);
 
             return identityResult;
+        }
+
+        [HttpGet]
+        [Route("api/GetUserClaims")]
+        public AccountModel GetUserClaims()
+        {
+            var userIdentity = (ClaimsIdentity)User.Identity;
+            
+            var accountModel = new AccountModel
+            {
+                UserName = userIdentity.FindFirst("Username").Value,
+                Email = userIdentity.FindFirst("Email").Value,
+                LoggedOn = userIdentity.FindFirst("LoggedOn").Value,
+            };
+
+            return accountModel;
         }
     }
 }

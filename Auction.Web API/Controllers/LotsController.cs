@@ -20,6 +20,7 @@ namespace Auction.Web_API.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public IHttpActionResult GetLotsSelection(int pageNumber)
         {
             IEnumerable<LotDto> lotsByPageNumber = _lotService.GetLotsByPageNumber(pageNumber);

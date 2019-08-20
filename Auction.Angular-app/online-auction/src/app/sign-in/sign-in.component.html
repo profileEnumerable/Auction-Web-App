@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col s8 offset-s2">
+        <div class="card white">
+            <div class="center">
+                <h3>Sign in</h3>
+            </div>
+            <form #userLoginForm="ngForm" (submit)="onSubmit(userLoginForm)">
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <input class="validate" type="text" #userName ngModel name="userName" id="userName" required>
+                        <label for="userName">User Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <input class="validate" type="password" #password ngModel name="password" id="password"
+                            required>
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field center">
+                        <button [disabled]="!loginForm.valid" type="submit" class="btn-large">Login</button>
+                    </div>
+                </div>
+                <p class="center card-panel">Are you not registered ? <span class="blue-text"><a routerLink="/registration">Registration</a></span>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>

@@ -22,10 +22,17 @@
   color: aliceblue;
 }
 
-.center-x {
+.centerer-x {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.centerer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%,-50%);
 }
 
 .flex-header {
@@ -38,3 +45,6 @@
   margin-left: 5px;
 }
 
+.selected {
+  display: none;
+}

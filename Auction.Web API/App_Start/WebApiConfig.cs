@@ -19,7 +19,7 @@ namespace Auction.Web_API
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/octet-stream"));
 
-            config.EnableCors(new EnableCorsAttribute("*", headers: "*", methods: "*"));
+            config.Filters.Add(new AuthorizeAttribute());//instead of [Authorize] attribute for methods that require authentication  
 
             // Configure Web API to use only bearer token authentication.
             //config.SuppressDefaultHostAuthentication();

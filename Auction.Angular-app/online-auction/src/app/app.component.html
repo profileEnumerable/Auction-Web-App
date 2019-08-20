@@ -1,24 +1,29 @@
 <header>
-        <nav>
-            <div class="container">
-                <ul class="flex-header">
-                    <li class="logo">
-                        <i class="fab fa-jenkins"></i>
-                        <span class="site-name">UqBuy</span>
-                    </li>
-                    <li>
-                        <input class="search-input browser-default" type="text" placeholder="Search🔍">
-                    </li>
-                    <li>
-                        <div class="sign-in-block">
-                            <a routerLink="sign-in" routerLinkActive="hidden-sing-in">
-                                <i class="fas fa-sign-in-alt"></i>
-                                <span class="sign-in-hint">Sign in</span>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <nav>
+        <div class="container">
+            <ul class="flex-header">
+                <li class="logo">
+                    <i class="fab fa-jenkins"></i>
+                    <span class="site-name">UqBuy</span>
+                </li>
+                <li>
+                    <input class="search-input browser-default" type="text" placeholder="Search🔍">
+                </li>
+                <li>
+                    <div class="sign-in-block">
+                        <a routerLink="sign-in" routerLinkActive="hidden-sing-in">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class="sign-in-hint">Sign in</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="center">
+    <a routerLink="lotslist" routerLinkActive="selected" class="btn"><i class="material-icons">keyboard_backspace</i>
+        <span>Back to lots</span>
+    </a>
+</div>
 <router-outlet></router-outlet>

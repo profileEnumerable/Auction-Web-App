@@ -1,9 +1,10 @@
 ﻿using Microsoft.Owin;
+using Microsoft.Owin.Cors;
+using Microsoft.Owin.Security.OAuth;
 using Owin;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using Auction.Data_Access_Layer.Entity_Framework;
+using System.Threading.Tasks;
+using Auction.Web_API.Providers;
 
 [assembly: OwinStartup(typeof(Auction.Web_API.Startup))]
 
@@ -13,8 +14,18 @@ namespace Auction.Web_API
     {
         public void Configuration(IAppBuilder app)
         {
-         //app.CreatePerOwinContext(AuctionContext)   
+            app.UseCors(CorsOptions.AllowAll);
+
+            var options = new OAuthAuthorizationServerOptions()
+            {
+                TokenEndpointPath = new PathString("/token"),
+                Provider = new ApplicationOAuthProvider(),
+                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(60),
+                AllowInsecureHttp = true
+            };
+
+            app.UseOAuthAuthorizationServer(options);
+            app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
         }
     }
 }
- 

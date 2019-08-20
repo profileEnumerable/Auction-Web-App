@@ -13,8 +13,6 @@ export class RegisterService {
   registerUser(user: User): Observable<any> {
     let path: string = environment.localhost + environment.userRegistration;
 
-     console.log(user);
-
     return this.httpClient.post(path, user);
   }
 }
