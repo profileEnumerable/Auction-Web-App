@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+.centerer-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .centerer-xy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%, -50%);
+  }

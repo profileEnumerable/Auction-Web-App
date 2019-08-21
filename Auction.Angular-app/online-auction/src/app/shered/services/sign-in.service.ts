@@ -16,7 +16,6 @@ export class SignInService {
 
     let url: string = environment.localhost + environment.tokenPath;
 
-    console.log(url);
     return this.httpClient.post(url, userData, { headers: requestHeader });
   }
 }

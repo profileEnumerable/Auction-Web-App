@@ -7,7 +7,8 @@ export const environment = {
   localhost: "https://localhost:44352",
   lotsByPageNum: "/api/lots?pageNumber=",
   userRegistration: "/api/user/register",
-  tokenPath: "/token"
+  tokenPath: "/token",
+  getUserClaims: "/api/GetUserClaims"
 };
 
 /*

@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { environment } from "src/environments/environment";
 import { map } from "rxjs/operators";
 import { Lot } from "../models/lot.model";
@@ -18,8 +18,6 @@ export class LotsListService {
     return this.httpClient.get(url).pipe(
       map((response: any[]) => {
         let lots: Lot[] = [];
-
-        console.log(response);
 
         for (let i = 0; i < response.length; i++) {
           let newLot: Lot = new Lot();

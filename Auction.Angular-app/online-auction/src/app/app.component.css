@@ -22,19 +22,6 @@
   color: aliceblue;
 }
 
-.centerer-x {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.centerer {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%,-50%);
-}
-
 .flex-header {
   display: flex;
   justify-content: space-between;

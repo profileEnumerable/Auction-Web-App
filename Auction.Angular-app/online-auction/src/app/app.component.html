@@ -11,10 +11,14 @@
                 </li>
                 <li>
                     <div class="sign-in-block">
-                        <a routerLink="sign-in" routerLinkActive="hidden-sing-in">
+                        <a *ngIf="!userClaims; else userName" routerLink="sign-in" routerLinkActive="hidden-sing-in">
                             <i class="fas fa-sign-in-alt"></i>
                             <span class="sign-in-hint">Sign in</span>
                         </a>
+                        <ng-template #userName>
+                            <span class="card-panel black-text">Hi {{userClaims.UserName}} !</span>
+                            <input (click)="logoutHandler()" type="button" class="btn" value="Logout">
+                        </ng-template>
                     </div>
                 </li>
             </ul>
@@ -22,8 +26,9 @@
     </nav>
 </header>
 <div class="center">
-    <a routerLink="lotslist" routerLinkActive="selected" class="btn"><i class="material-icons">keyboard_backspace</i>
-        <span>Back to lots</span>
+    <a routerLink="lotslist" routerLinkActive="selected" class="btn">
+        <i class="material-icons">keyboard_backspace</i>
+        Back to lots
     </a>
 </div>
-<router-outlet></router-outlet>
+<router-outlet (activate)="routerOutletChanged()"></router-outlet>
