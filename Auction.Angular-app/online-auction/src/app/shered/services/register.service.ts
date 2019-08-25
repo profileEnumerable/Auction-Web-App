@@ -11,17 +11,15 @@ export class RegisterService {
   constructor(private httpClient: HttpClient) {}
 
   registerUser(user: User): Observable<any> {
-    let path: string = environment.localhost + environment.userRegistration;
+    let url: string = environment.localhost + environment.userRegistration;
 
-    return this.httpClient.post(path, user);
+    let reqHeader = new HttpHeaders({ "No-Auth": "true" });
+    return this.httpClient.post(url, user, { headers: reqHeader });
   }
 
   getUserClaims() {
     let url: string = environment.localhost + environment.getUserClaims;
 
-    let bearerToken = localStorage.getItem("accessToken");//get Bearer token
-    var header = new HttpHeaders({ Authorization: "Bearer " + bearerToken });
-
-    return this.httpClient.get(url, { headers: header });
+    return this.httpClient.get(url);
   }
 }

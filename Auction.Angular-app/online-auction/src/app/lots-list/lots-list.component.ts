@@ -16,6 +16,6 @@ export class LotsListComponent implements OnInit {
   ngOnInit() {
     this.lotsListService
       .getLotsByPageNumber(this.startPageNum)
-      .subscribe(lotsArr => (this.lots = lotsArr), e => console.error(e));      
+      .subscribe(lotsArr => (this.lots = lotsArr), e => {});      
   }
 }

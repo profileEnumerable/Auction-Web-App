@@ -15,7 +15,9 @@ export class LotsListService {
     let url: string =
       environment.localhost + environment.lotsByPageNum + pageNumber;
 
-    return this.httpClient.get(url).pipe(
+    let reqHeader = new HttpHeaders({ "No-Auth": "true" });
+
+    return this.httpClient.get(url, { headers: reqHeader }).pipe(
       map((response: any[]) => {
         let lots: Lot[] = [];
 

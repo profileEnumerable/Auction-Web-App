@@ -1,5 +1,6 @@
 /*---------------------------Styles for tags--------------------*/
 
+
 /*---------------------------Styles for CSS selectors--------------------*/
 .fa-jenkins {
   font-size: 3.5rem;
@@ -35,3 +36,5 @@
 .selected {
   display: none;
 }
+
+

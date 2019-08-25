@@ -8,11 +8,12 @@ import { Router } from "@angular/router";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
+  userClaims: any;
+  
   constructor(
     private registerService: RegisterService,
     private router: Router
   ) {}
-  userClaims: any;
 
   logoutHandler() {
     localStorage.removeItem("accessToken");
@@ -22,7 +23,7 @@ export class AppComponent {
   }
 
   routerOutletChanged() {
-    if (!this.userClaims && localStorage.getItem("accessToken")) {
+    if (localStorage.getItem("accessToken")) {
       this.registerService.getUserClaims().subscribe((claims: any) => {
         this.userClaims = claims;
       });

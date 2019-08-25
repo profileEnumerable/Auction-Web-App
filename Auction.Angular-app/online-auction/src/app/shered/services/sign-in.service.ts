@@ -11,7 +11,7 @@ export class SignInService {
   userAuthentication(userName, password) {
     let userData = `username=${userName}&password=${password}&grant_type=password`;
     let requestHeader = new HttpHeaders({
-      "Content-Type": "application/x-www-urlencoded"
+      "Content-Type": "application/x-www-urlencoded","No-Auth":"true"
     });
 
     let url: string = environment.localhost + environment.tokenPath;
